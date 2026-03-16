@@ -1,0 +1,11 @@
+{
+  "name": "ruobinghuang-academic-site",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:pub": "node scripts/build_publications.mjs"
+  },
+  "dependencies": {
+    "bibtex-parse-js": "^0.0.24"
+  }
+}
