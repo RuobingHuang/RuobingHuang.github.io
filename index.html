@@ -1,29 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/style.css">
-    <title>Home - Ruobing Huang</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="assets/style.css" />
+  <title>Ruobing Huang</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="publications.html">Publications</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h1>Welcome to Ruobing Huang's Academic Website</h1>
-        <p>This website provides information about my research and publications.</p>
-        <p><a href="publications.html">View Publications</a></p>
-        <p><a href="about.html">Learn More About Me</a></p>
-        <p><a href="contact.html">Contact Me</a></p>
-    </main>
-    <script src="assets/site.js"></script>
+<header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <!-- 如果你还想保留 about.html，就取消注释下一行
+      <li><a href="about.html">About</a></li>
+      -->
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <div class="card home-hero">
+    <div class="home-hero-left">
+      <img class="profile-photo" src="assets/img/hrb.jpg" alt="Ruobing Huang">
+    </div>
+
+    <div class="home-hero-right">
+      <h1 style="margin-top:0;">Ruobing Huang</h1>
+
+      <p>
+        <!-- TODO: 这里改成你的 1-2 句简介 -->
+        I am a researcher interested in human–AI collaboration, conceptual design, and decision-making.
+      </p>
+
+      <p class="small">
+        <!-- TODO: 这里改成你的关键词/单位 -->
+        Keywords: Human-AI collaboration · Product conceptual design · QFD · LLMs
+      </p>
+
+      <div class="home-links">
+        <a class="btn" href="mailto:ruobing.huang@connect.polyu.hk">Email</a>
+        <!-- 可选按钮：取消注释并填链接 -->
+        <!-- <a class="btn" href="https://scholar.google.com/">Google Scholar</a> -->
+        <!-- <a class="btn" href="https://github.com/RuobingHuang">GitHub</a> -->
+        <!-- <a class="btn" href="assets/cv.pdf">CV</a> -->
+      </div>
+    </div>
+  </div>
+
+  <h2>About me</h2>
+  <div class="card">
+    <p>
+      <!-- TODO: 把这里替换成你的个人简介 -->
+      Write a short paragraph about your affiliation, education, and research focus.
+    </p>
+  </div>
+
+  <h2>Selected Publications</h2>
+  <div class="card">
+    <ul class="pub-list">
+      <li>
+        <div class="pub-title">
+          Design coco-pilot: QFD as decision logic for conflict-aware human--LLM collaborative product conceptual design
+        </div>
+        <div class="pub-meta">
+          Ruobing Huang, Tiance Yang, Shanshan Feng, Fan Li. <em>Journal of Engineering Design</em>, 2025.
+        </div>
+      </li>
+
+      <li>
+        <div class="pub-title">
+          Cognitive Support in Aviation Operations Utilizing Multimodal Large Language Models
+        </div>
+        <div class="pub-meta">
+          Ruobing Huang, Shanshan Feng, Fan Li, Caishun Chen, Yew Soon Ong. <em>IJCNN</em>, 2025.
+        </div>
+      </li>
+    </ul>
+
+    <div style="margin-top:12px;">
+      <a class="btn" href="publications.html">View all publications</a>
+    </div>
+  </div>
+
+  <div class="footer">
+    © <span id="y"></span> Ruobing Huang
+  </div>
+</main>
+
+<script src="assets/site.js"></script>
+<script>document.getElementById("y").textContent = new Date().getFullYear();</script>
 </body>
 </html>
