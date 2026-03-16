@@ -126,3 +126,40 @@ code, pre{font-family: var(--mono)}
   border: 1px solid var(--border);
   box-shadow: var(--shadow);
 }
+.home-hero{
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 18px;
+  align-items: start;
+}
+
+.home-hero-left{
+  display: flex;
+  justify-content: center;
+}
+
+.home-links{
+  margin-top: 10px;
+}
+
+.home-hero-right .btn{
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+.pub-list{
+  margin: 0;
+  padding-left: 18px;
+}
+.pub-list li{
+  margin: 10px 0 14px;
+}
+
+@media (max-width: 720px){
+  .home-hero{
+    grid-template-columns: 1fr;
+  }
+  .home-hero-left{
+    justify-content: flex-start;
+  }
+}
