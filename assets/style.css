@@ -116,3 +116,13 @@ code, pre{font-family: var(--mono)}
   color: var(--muted);
   font-size: .95rem;
 }
+.profile-photo{
+  width: 180px;
+  max-width: 50vw;
+  height: auto;
+  display: block;
+  margin: 0 auto 14px;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
