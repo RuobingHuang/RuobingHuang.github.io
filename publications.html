@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="assets/style.css" />
+  <title>Publications - Ruobing Huang</title>
+</head>
+<body>
+<header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <h1>Publications</h1>
+
+  <div class="card">
+    <h2>2025</h2>
+
+    <div class="pub">
+      <div class="pub-title">
+        Design coco-pilot: QFD as decision logic for conflict-aware human--LLM collaborative product conceptual design
+      </div>
+      <div class="pub-meta">
+        Ruobing Huang, Tiance Yang, Shanshan Feng, Fan Li. <em>Journal of Engineering Design</em>, 2025, 1–24.
+      </div>
+
+      <button class="btn" data-copy-bibtex="bib-huang2025design">Copy BibTeX</button>
+      <pre class="bibtex" id="bib-huang2025design">@article{huang2025design,
+  title={Design coco-pilot: QFD as decision logic for conflict-aware human--LLM collaborative product conceptual design},
+  author={Huang, Ruobing and Yang, Tiance and Feng, Shanshan and Li, Fan},
+  journal={Journal of Engineering Design},
+  pages={1--24},
+  year={2025},
+  publisher={Taylor \& Francis}
+}</pre>
+    </div>
+
+    <p class="small">
+      (Next step: we can automate this page by parsing <code>publications.bib</code> in a small build script or GitHub Action.)
+    </p>
+  </div>
+
+  <div class="footer">
+    © <span id="y"></span> Ruobing Huang
+  </div>
+</main>
+
+<script src="assets/site.js"></script>
+<script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>
