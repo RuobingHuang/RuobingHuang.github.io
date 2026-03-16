@@ -130,7 +130,7 @@ code, pre{font-family: var(--mono)}
   display: grid;
   grid-template-columns: 220px 1fr;
   gap: 18px;
-  align-items: start;
+  align-items: center;
 }
 
 .home-hero-left{
